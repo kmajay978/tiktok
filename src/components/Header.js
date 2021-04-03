@@ -23,7 +23,7 @@ const Header = () => {
                             <a href="#" title className="menu">
                                 <i className="icon-menu" />
                             </a>
-                            <a href="index.html" title className="logo">
+                            <a href="/" title className="logo">
                                 <img src="/assets/images/logo.png" alt="" />
                             </a>
                         </div>{/*menu_logo end*/}
