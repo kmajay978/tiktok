@@ -2,42 +2,15 @@ import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import SideMenu from '../components/SideMenu';
 import $ from 'jquery';
+// import {sideMenuJs} from  '../components/commonFunction';
 
 const Home = () => {
-    useEffect(() => {
-        var header_height = $(".top_bar").innerHeight();
-    
-        $(".side_menu").css({
-            "top": header_height
-        });
-    
-        $(".menu").on("click", function(){
-          $(".side_menu").toggleClass("active");
-          return false;
-        });
-    
-        $("html").on("click", function() {
-            $(".side_menu").removeClass("active");
-        });
-        $(".menu, .side_menu").on("click", function(e){
-            e.stopPropagation();
-        });
-    
-        $(".user-log").on("click", function() {
-            $(".account-menu").slideToggle();
-        });
-        $("html").on("click", function() {
-            $(".account-menu").slideUp();
-        });
-        $(".user-log, .account-menu").on("click", function(e) {
-            e.stopPropagation();
-        });
-    
-    }, [])
+ 
+   
     return (
-
+       
         <div className="wrapper hp_1">
-            <Header />
+            <Header/>
              <SideMenu/>
             <section className="banner-section">
                 <div className="container">
