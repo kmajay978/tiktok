@@ -2834,10 +2834,11 @@ input[type="checkbox"]:checked ~ .checkmark:before {
 }
 .contacts{
 	width:100%;
-	padding-bottom
+	padding: bottom;
 }
+
 .video-details{
-	width:100%;
+	width :100%;
 	border-left: 1px solid #e2ebef;
 }
 .latest-vid-option{
@@ -4753,8 +4754,8 @@ header.hp_1 .side_links li.user_contrl {
 	height: 100%;
 }
 .video-js .vjs-big-play-button {
-	top: 50%;
-	left: 50%;
+	top: 50% !important;
+	left: 50% !important;
 	-webkit-transform: translate(-50%,-50%);
 	-moz-transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);
