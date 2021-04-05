@@ -8,3 +8,4 @@ export {default as UserAccountPage} from './UserAccountPage';
 export {default as SingleVideoPage} from './SingleVideoPage';
 export {default as UploadEdit} from './UploadEdit';
 export {default as SearchedVideoPage} from './SearchedVideoPage';
+export {default as BrowserChannels} from './BrowseChannels';
