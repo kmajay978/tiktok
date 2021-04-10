@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../components/Header';
-import SideMenu from '../components/SideMenu'
+import Header from '../../components/Header';
+import SideMenu from '../../components/SideMenu'
 
 const Login = () => {
     return (
@@ -43,7 +43,7 @@ const Login = () => {
                         <a href="#" title className="fg_btn">Forgot password?</a>
                     </div>{/*user-account end-*/}
                     <div className="fr-ps">
-                        <h1>Don’t have an account? <a href="signup.html" title className="show_signup">Signup here.</a></h1>
+                        <h1>Don’t have an account? <a href="signup" title className="show_signup">Signup here.</a></h1>
                     </div>{/*fr-ps end*/}
                 </div>{/*login end-*/}
             </section>{/*form_popup end*/}

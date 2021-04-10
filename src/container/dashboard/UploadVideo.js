@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
-import Header from '../components/Header';
-import SideMenu from '../components/SideMenu'
+import Header from '../../components/Header';
+import SideMenu from '../../components/SideMenu'
 import $ from 'jquery';
 
 

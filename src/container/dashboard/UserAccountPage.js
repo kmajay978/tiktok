@@ -1,7 +1,7 @@
 import React from 'react';
 import Flatpickr from "react-flatpickr";
-import Header from '../components/Header';
-import SideMenu from '../components/SideMenu'
+import Header from '../../components/Header';
+import SideMenu from '../../components/SideMenu'
 
 const UserAccountPage = () => {
     return (

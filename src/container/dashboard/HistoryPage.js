@@ -1,6 +1,6 @@
 import React from 'react'
 import $ from 'jquery';
-import SideMenu from '../components/SideMenu';
+import SideMenu from '../../components/SideMenu';
 
 const HistoryPage = () =>{
     return(
