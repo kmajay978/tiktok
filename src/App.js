@@ -6,6 +6,7 @@ import $ from 'jquery';
 import { useEffect } from 'react';
 import { Login , Signup } from './container/account';
 
+
 function App() {
   
  
@@ -21,6 +22,9 @@ function App() {
           <Route  path="/single-Channel-about" component={SingleChannelAbout}/>
           <Route path="/User-Account-Page" component={UserAccountPage}/>
           <Route path="/single_video_page" component={SingleVideoPage}/>
+          <Route path="/upload-edit" component={UploadEdit}/> 
+          <Route path="/searched-videos-page" component={SearchedVideoPage}/>
+          <Route path="/browse-channels" component={BrowserChannels}/>
       </Switch>
       
     </Router>
