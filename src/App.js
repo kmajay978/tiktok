@@ -3,10 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import {Home , HistoryPage ,  UploadVideo , SingleChannelAbout  , SingleVideoPage ,
    UserAccountPage, 
    UploadEdit, SearchedVideoPage, BrowserChannels} from './container/dashboard'
-import $ from 'jquery';
-import { useEffect } from 'react';
 import { Login , Signup } from './container/account';
-
+import ProtectedRoute from "./routes/Protected.route";
 
 function App() {
   
@@ -15,17 +13,17 @@ function App() {
     <Router>
       <Switch>
          <Route exact path="/login" component={Login} />
-         <Route path="/signup" component={Signup}/>
+         <Route exact path="/signup" component={Signup}/>
 
-          <Route  path="/" component={Home} />
-          <Route  path="/history-page" component={HistoryPage} />
-          <Route  path="/upload-video" component={UploadVideo} />
-          <Route  path="/single-Channel-about" component={SingleChannelAbout}/>
-          <Route path="/User-Account-Page" component={UserAccountPage}/>
-          <Route path="/single_video_page" component={SingleVideoPage}/>
-          <Route path="/upload-edit" component={UploadEdit}/> 
-          <Route path="/searched-videos-page" component={SearchedVideoPage}/>
-          <Route path="/browse-channels" component={BrowserChannels}/>
+          <ProtectedRoute exact path="/" component={Home} />
+          <ProtectedRoute path="/history-page" component={HistoryPage} />
+          <ProtectedRoute path="/upload-video" component={UploadVideo} />
+          <ProtectedRoute path="/single-Channel-about" component={SingleChannelAbout}/>
+          <ProtectedRoute path="/User-Account-Page" component={UserAccountPage}/>
+          <ProtectedRoute path="/single_video_page" component={SingleVideoPage}/>
+          <ProtectedRoute path="/upload-edit" component={UploadEdit}/> 
+          <ProtectedRoute path="/searched-videos-page" component={SearchedVideoPage}/>
+          <ProtectedRoute path="/browse-channels" component={BrowserChannels}/>
       </Switch>
       
     </Router>

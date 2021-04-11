@@ -18,13 +18,13 @@ const Login = () => {
             <section className="form_popup">
                 <div className="login_form" id="login_form">
                     <div className="hd-lg">
-                        <img src="/assets/images/logo.png" alt="" />
+                        <img src="/assets/images/logo3.png" alt="" />
                         <span>Log into your Oren account</span>
                     </div>{/*hd-lg end*/}
                     <div className="user-account-pr">
                         <form>
                             <div className="input-sec">
-                                <input type="text" name="username" placeholder="Username" />
+                                <input type="text" name="email" placeholder="Email" />
                             </div>
                             <div className="input-sec">
                                 <input type="Password" name="password" placeholder="Password" />

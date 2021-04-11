@@ -24,7 +24,7 @@ const Header = () => {
                                 <i className="icon-menu" />
                             </a>
                             <a href="/" title className="logo">
-                                <img src="/assets/images/logo.png" alt="" />
+                                <img src="/assets/images/logo3.png" alt="" />
                             </a>
                         </div>{/*menu_logo end*/}
                         <div className="search_form">
