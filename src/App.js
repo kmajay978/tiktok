@@ -1,7 +1,8 @@
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import {Home , HistoryPage ,  UploadVideo , SingleChannelAbout  , SingleVideoPage ,
-   UserAccountPage } from './container/dashboard'
+   UserAccountPage, 
+   UploadEdit, SearchedVideoPage, BrowserChannels} from './container/dashboard'
 import $ from 'jquery';
 import { useEffect } from 'react';
 import { Login , Signup } from './container/account';
@@ -16,7 +17,7 @@ function App() {
          <Route exact path="/login" component={Login} />
          <Route path="/signup" component={Signup}/>
 
-          <Route  path="/home" component={Home} />
+          <Route  path="/" component={Home} />
           <Route  path="/history-page" component={HistoryPage} />
           <Route  path="/upload-video" component={UploadVideo} />
           <Route  path="/single-Channel-about" component={SingleChannelAbout}/>

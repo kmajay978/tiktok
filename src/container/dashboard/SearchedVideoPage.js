@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from '../components/Header';
-import SideMenu from '../components/SideMenu';
+import Header from '../../components/Header';
+import SideMenu from '../../components/SideMenu'
 
 const SearchedVideoPage = () => {
     return(
         <div className="wrapper hp_1">
-            <Header/>
+            <Header />
             <SideMenu/>
         <section className="filter-sec">
           <div className="container">
